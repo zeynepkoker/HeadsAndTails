@@ -1,0 +1,194 @@
+body {
+    font-family: 'Courier New';
+    font-weight: bold;
+    background-color: rgb(236, 230, 222);
+}
+
+.all-page-container {
+    display: flex; 
+    flex-direction: column; 
+    height: 100%;
+    align-items: center;
+}
+
+.page-container {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center;
+    width: 500px;
+    height: fit-content;
+    border: 3px solid rgb(35, 57, 164);
+    background-color: rgb(152, 195, 233);
+}
+
+.main-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+}
+
+.button {
+    font-family: "proxima nova",sans-serif;
+    opacity: 1;
+    font-size: 25px;
+    color: rgb(31, 79, 121);
+    width: 160px;
+    height: 160px;
+    text-align: center;
+    border-style: hidden;
+    border-radius: 50%;
+    margin-top: 0px;
+    background-image: linear-gradient(45deg, rgb(155, 171, 52), rgb(202, 202, 106));
+    font-weight: 800;
+    box-shadow: 3px 3px 3px 3px rgb(113, 110, 199);
+    text-shadow: 1px 1px rgb(236, 230, 222);
+}
+
+.button:hover {
+    font-family: "proxima nova",sans-serif;
+    font-weight: 800;
+    min-height: 40px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    touch-action: manipulation;
+    background-size: 270%;
+    background-repeat: repeat;
+    background-position: top right;
+    transition: 4.0s;
+    background-image: linear-gradient(45deg, rgb(155, 171, 52), rgb(202, 202, 106));
+    background-size: 270%;
+    background-repeat: repeat;
+    background-position: top right;
+    display: table;
+    text-decoration: none;
+    box-shadow: 2px 2px 2px 2px rgba(113, 110, 199);
+    transform: rotate(360deg) scaleX(1);
+    padding: 1.5em 0;
+    cursor: pointer;
+}
+
+.reset-result-button {
+    font-size: 20px;
+    color: brown;
+    background-color: rgb(236, 230, 222);
+    font-weight: bold;
+    width: 170px;
+    height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    border-color: transparent;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 2px rgba(113, 110, 199);
+}
+
+.main-part,
+.total-result,
+.result-view,
+.total-coin-num,
+.chart-info ul li {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.chart-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.block-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.result-view {
+    border-color: transparent;
+    width: 75px;
+    box-shadow: 2px 2px 2px 2px rgba(113, 110, 199);
+    background-color: rgb(236, 230, 222);
+    border-radius: 20px;
+    margin-top: 15px;
+
+}
+
+.chart-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pie-chart {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: transparent;
+    margin-top: 25px;
+    box-shadow: 2px 2px 2px 2px rgb(113, 110, 199);
+}
+
+.chart-info ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.chart-info ul li {
+    margin-bottom: 0;
+    margin-top: 0;
+    align-items:flex-end;
+}
+
+.input-num {
+    width: 170px;
+    height: 20px;
+    border: 2px solid black;
+    margin-top: 0px;
+    cursor: auto;
+    background-color: rgb(236, 230, 222);
+    font-size: 20px;
+    border-color: transparent;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 2px rgba(113, 110, 199);
+    text-align: center;
+}
+
+.percentage-block {
+    width: 30px;
+    height: 20px;
+    border-radius: 5px;
+    margin-left: 5px;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    box-shadow: 1px 1px 1px 1px rgb(113, 110, 199);
+}
+
+.percentage-block.green {
+    background-color: rgb(14, 141, 48);
+}
+
+.percentage-block.red {
+    background-color: rgba(155, 36, 90, 0.971);
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .page-container {
+        width: 300px;
+    }
+    .pie-chart {
+        margin-left: -2px;
+        width: 100px;
+        height: 100px;
+    }
+}

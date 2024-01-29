@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Coin</title>
+    <link rel="icon" href="img/coin-logo.png" type="image/icon type">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="all-page-container">
+        <div class="page-container">
+            <div class="main-part">
+                <button onclick="flipCoin()" class="button">Flip Coin</button>
+                    <p style="opacity: 0;" class="result-view">Current</p>
+                    <p class="total-result"></p>
+                    <p class="total-coin-num"></p>
+                <button onclick="
+                updateResultElement(true);
+                " class="reset-result-button">Reset Score</button>
+                <div>
+                    <div class="input-num-part">
+                        <p>Enter number to flip coins multiple times.</p>
+                        <input class="input-num" type="text"
+                            placeholder="Enter a number" onkeydown="xTimesFlipCoin(event)">
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="chart-wrap">
+                        <figure id="pie-chart" class="pie-chart"></figure>
+                        <div class="chart-info">
+                            <ul>
+                                <li class="percentage-head"></li>
+                                <li class="percentage-tail"></li>
+                            </ul>
+                            <div class="block-container">
+                                <div class="percentage-block green"></div>
+                                <div class="percentage-block red"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/flip-coin.js"></script>
+</html>
